@@ -9,10 +9,10 @@
     - [x] Extract `rooms`
     - [x] Extract `floor`
     - [x] Extract `image url`
-    - [ ] Extract `link`
-- [ ] Display the results
-- [ ] Save the results to a database
-- [ ] Somehow save the visited links to avoid duplicates
-- [ ] Run the script on a regular basis
-- [ ] Display the new ads
+    - [x] Extract `link`
+- [x] Display the results
+- [x] Ad class
+- [x] Use SQLite to store the ads
+- [x] Print out the ads that are new
+- [ ] Re-run the script on a regular basis
 - [ ] Send the new ads to a telegram channel
