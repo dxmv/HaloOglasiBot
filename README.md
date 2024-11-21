@@ -1,1 +1,18 @@
-# HaloOglasiBot
+## Scraping
+- [x] Fetch the HTML content of the page
+- [x] Parse the content and extract apartment information
+    - [x] Extract `data-id`
+    - [x] Extract `title`
+    - [x] Extract `price`
+    - [x] Extract `location`
+    - [x] Extract `area`
+    - [x] Extract `rooms`
+    - [x] Extract `floor`
+    - [x] Extract `image url`
+    - [ ] Extract `link`
+- [ ] Display the results
+- [ ] Save the results to a database
+- [ ] Somehow save the visited links to avoid duplicates
+- [ ] Run the script on a regular basis
+- [ ] Display the new ads
+- [ ] Send the new ads to a telegram channel
