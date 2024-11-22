@@ -16,3 +16,4 @@
 - [x] Print out the ads that are new
 - [ ] Re-run the script on a regular basis
 - [ ] Send the new ads to a telegram channel
+- [ ] Handle errors
