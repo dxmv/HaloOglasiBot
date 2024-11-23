@@ -3,8 +3,8 @@ from typing import List, Optional
 from models.ad import Ad
 
 class ApartmentStorage:
-    def __init__(self, db_path: str = "apartments.db"):
-        # Initialize the database path
+    def __init__(self, db_path: str = "/data/apartments.db"):
+        # Initialize the database path in a writable directory
         self.db_path = db_path
         # Initialize the database by creating necessary tables
         self.init_db()

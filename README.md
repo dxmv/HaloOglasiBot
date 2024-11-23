@@ -14,6 +14,10 @@
 - [x] Ad class
 - [x] Use SQLite to store the ads
 - [x] Print out the ads that are new
-- [ ] Re-run the script on a regular basis
-- [ ] Send the new ads to a telegram channel
+- [x] Re-run the script on a regular basis
+- [x] Send the new ads to a telegram channel
 - [ ] Handle errors
+    - [x] Two apartments are printed out
+    - [x] Links don't work
+- [x] Readme.md
+

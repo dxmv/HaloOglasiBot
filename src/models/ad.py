@@ -24,7 +24,8 @@ class Ad:
         # Extract title and link
         title_element = ad.find('h3', class_='product-title')
         title = title_element.text.strip() if title_element else "No title"
-        link = title_element.find("a")['href'] if title_element else "No link"
+        relative_link = title_element.find("a")['href'] if title_element else "No link"
+        link = f"https://www.halooglasi.com{relative_link}" if relative_link != "No link" else relative_link
 
         # Extract price
         price_element = ad.find('div', class_='central-feature')

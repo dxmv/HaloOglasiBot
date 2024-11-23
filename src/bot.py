@@ -73,8 +73,7 @@ async def scrape_and_notify():
     finally:
         try:
             await bot.close()
-        except RetryAfter:
-            # Ignore rate limit errors during cleanup
+        except:
             pass
 
 def run_scraper():
@@ -86,11 +85,8 @@ def main():
     if not TELEGRAM_TOKEN or not CHANNEL_ID:
         raise ValueError("Please set TELEGRAM_TOKEN and CHANNEL_ID environment variables")
     
-    # Schedule the job to run every 5 minutes
+    # Schedule the job to run every 30 seconds
     schedule.every(30).seconds.do(run_scraper)
-    
-    # Run first scrape immediately
-    run_scraper()
     
     # Keep the script running
     while True:
